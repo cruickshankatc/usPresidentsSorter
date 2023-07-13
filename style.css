@@ -1,0 +1,19 @@
+li {
+  list-style: none;
+}
+
+select {
+  width: 100px;
+}
+
+button {
+  width: 100px;
+}
+
+#reset {
+  margin-left: 104px;
+}
+
+#Democrat {
+  background-color: blue;
+}
