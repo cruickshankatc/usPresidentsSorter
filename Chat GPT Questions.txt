@@ -1,0 +1,42 @@
+QUESTION 1:
+I'm doing a project on the United States presidents. The project allows users to filter and display the presidents in many different ways such as party, number of terms, past offices held, etc.
+
+To arrange information, I have each president set as an object. For example,
+
+presidents[0] = {
+	name: George Washington,
+	number: 1,
+	party: Independent,
+	terms: 2,
+	diedInOffice: false,
+	daysInOffice: 2865
+}
+
+Initially I had a class called "President" that looked like this:
+
+class President {
+  constructor(name, number, party, terms, diedInOffice, daysInOffice) {
+    this.name = name;
+    this.number = number;
+    this.party = party;
+    this.terms = terms;
+    this.diedInOffice = diedInOffice;
+    this.daysInOffice = daysInOffice;
+ }
+
+and then I'd do presidents[0] = 
+new President("George Washington", 1, "Independent", 2, false, 2865)
+
+The problem I ran into is that I'm going to have so many properties for each president that I figured this might be confusing for me to work with. While I only have six properties right now, eventually I'm going to have potentially forty properties for each president. Some of these properties, such as bio are going to be long strings of text. Also, in all I'm going to have forty-five presidents (so forty-five objects)
+
+My questions are: is a class system the right way to do this or will it get too confusing? Considering the scale of what I'm doing, am I even approaching my project the right way? Should I be using objects or doing something different altogether?
+
+
+
+
+QUESTION 2:
+Considering how big each object in the presidents array is going to be, should I have separate JavaScript files for each president, or is it better to just keep them in the same file? Considering the scope of the project, what would be the more orthodox practice?
+
+
+
+	

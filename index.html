@@ -1,35 +1,37 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>U.S. Presidents Sorter</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-    <section id="main">     
-    </section>
-		<br>
-		<section id="sortAndFilter">
-
-			<select name="" id="partySelector">
-				<option value="" disabled selected>--Party--</option>
-				<option value="Democrat">Democrat</option>
-				<option value="Democratic-Republican">Democratic-Republican</option>
-				<option value="Federalist">Federalist</option>
-				<option value="Independent">Independent</option>
-				<option value="Republican">Republican</option>
-				<option value="Whig">Whig</option>
-			</select>
-			<button onclick="byParty()">Filter by Party</button><br>
-
-			<select name="" id="sorter">
-				<option value="" disabled selected>--Sort By--</option>				
-				<option value="Number">Number</option>
-				<option value="Terms">Terms</option>
-			</select>
-			<button onclick="sort()">Sort</button><br>
-
-			<br><button id="reset" onclick="resetList()">Reset</button>
-
-		</section>
-		<script src="main.js"></script>
-	</body>
+<head>
+  <title>Presidents of the United States!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <section id="header">
+    <h1 id="pageTitle">PresidentsFilter</h1>
+    <i id="menu" class="fas fa-bars"></i>
+  </section>
+  <section id="presidentsSpace">
+    
+  </section>
+  <section id="filters">
+    <select name="party" id="party">
+      <option value="" class="placeholder" disabled selected>--Party--</option>
+      <option value="Republican">Republican</option>
+      <option value="Democrat">Democrat</option>
+    </select>
+    <select name="terms" id="terms">
+      <option value="" class="placeholder"  disabled selected>--Terms--</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="4">Four</option>
+    </select>
+    <button onclick="filterPresidents()">Click Here!</button>
+  </section>
+  <section id="footer">
+    <i class="fas fa-filter icon"></i>
+    <i class="fas fa-desktop icon"></i>
+    <i class="fas fa-sort icon"></i>
+  </section>
+<script src="main.js"></script>
+</body>
 </html>

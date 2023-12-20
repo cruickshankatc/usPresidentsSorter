@@ -1,108 +1,416 @@
-class President {
-  constructor(name, number, party, terms, diedInOffice, daysInOffice) {
-    this.name = name;
-    this.number = number;
-    this.party = party;
-    this.terms = terms;
-    this.diedInOffice = diedInOffice;
-    this.daysInOffice = daysInOffice;
-  }
+let body = document.body;
+let presidentsSpace = document.getElementById("presidentsSpace");
 
-  image() {
-    let fullName = "";
-    let fullName2;
-    for (x = 0; x < this.name.split(" ").length; x++) {
-      fullName += this.name.split(" ")[x];
-    }
+let presidents = [];
 
-    fullName2 = fullName.replaceAll('.','')
-    return fullName2.toLowerCase() + ".jpg";
-  }
+presidents[0] = {
+    number: 1,
+    name: "George Washington",
+    party: "Independent",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "georgewashington.jpg",
 }
 
-let presidents = [
-  new President("George Washington", 1, "Independent", 2, false, 2865),
-  new President("John Adams", 2, "Federalist", 1, false, 1460),
-  new President("Thomas Jefferson", 3, "Democratic-Republican", 2, false, 2922),
-  new President("James Madison", 4, "Democratic-Republican", 2, false, 2922),
-  new President("James Monroe", 5, "Democratic-Republican", 2, false, 2922),
-  new President("John Quincy Adams", 6, "Democratic-Republican", 1, false, 1461),
-  new President("Andrew Jackson", 7, "Democrat", 2, false, 2922),
-  new President("Martin Van Buren", 8, "Democrat", 1, false, 1461),
-  new President("William Henry Harrison", 9, "Whig", 1, true, 31),
-  new President("John Tyler", 10, "Independent", 1, false, 1430),
-  new President("James K. Polk", 11, "Democrat", 1, false, 1461),
-  new President("Zachary Taylor", 12, "Whig", 1, true, 492),
-  new President("Millard Fillmore", 13, "Whig", 1, false, 969),
-  new President("Franklin Pierce", 14, "Democrat", 1, false, 1461),
-  new President("James Buchanan", 15, "Democrat", 1, false, 1461),
-  new President("Abraham Lincoln", 16, "Republican", 2, true, 1503),
-  new President("Andrew Johnson", 17, "Democrat", 1, false, 1419),
-  new President("Ulysses S. Grant", 18, "Republican", 2, false, 2922),
-  new President("Rutherford B. Hayes", 19, "Republican", 1, false, 1461),
-  new President("James A. Garfield", 20, "Republican", 1, true, 199),
-  new President("Chester A. Arthur", 21, "Republican", 1, false, 1262),
-  new President("Grover Cleveland", 22, "Democrat", 2, false, 2922),
-  new President("Benjamin Harrison", 23, "Republican", 1, false, 1461),
-  new President("William McKinley", 25, "Republican", 2, true, 1654),
-  new President("Theodore Roosevelt", 26, "Republican", 2, false, 2728),
-  new President("William Howard Taft", 27, "Republican", 1, false, 1461),
-  new President("Woodrow Wilson", 28, "Democrat", 2, false, 2922),
-  new President("Warren G. Harding", 29, "Republican", 1, true, 881),
-  new President("Calvin Coolidge", 30, "Republican", 2, false, 2041),
-  new President("Herbert Hoover", 31, "Republican", 1, false, 1461),
-  new President("Franklin D. Roosevelt", 32, "Democrat", 4, true, 4422),
-];
-
-//VARIABLES AND INITIAL SETTINGS
-let main = document.getElementById("main");
-
-// Call the displayPresidents function initially to populate the list
-displayPresidents(presidents);
-
-//FUNCTIONS
-// Function to display all presidents' names in order
-function displayPresidents(presidentsArray) {
-  const sortedPresidents = presidentsArray.slice().sort((a, b) => a.number - b.number);
-
-  // Create an array of list items using template literals
-  const listItems = sortedPresidents.map(president => `<li>${president.name}</li>`);
-
-  // Set the HTML content of the 'main' element
-  main.innerHTML = listItems.join('');
+presidents[1] = {
+    number: 2,
+    name: "John Adams",
+    party: "Federalist",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "johnadams.jpg",
 }
 
-// Function to reset the list to its initial state
-function resetList() {
-  displayPresidents(presidents);
+presidents[2] = {
+    number: 3,
+    name: "Thomas Jefferson",
+    party: "Democratic-Republican",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "thomasjefferson.jpg",
 }
 
-
-function byParty() {
-  const partySelector = document.getElementById('partySelector');
-  const selectedParty = partySelector.value;
-
-  if (selectedParty === '') {
-    // If no party is selected, reset the list to the initial state
-    resetList();
-    return;
-  }
-
-  const filteredPresidents = presidents.filter(president => president.party === selectedParty);
-  displayPresidents(filteredPresidents);
+presidents[3] = {
+    number: 4,
+    name: "James Madison",
+    party: "Democratic-Republican",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "jamesmadison.jpg",
 }
 
-function sort() {
-  names = names.sort((a, b) => {
-    return a.terms - b.terms;
-  });
-
-  names2 = names.map(name => {
-    return `<li class="${name.party}">${name.name}</li>`
-  })
-
-  names2 = names2.join().replaceAll(",", ""); 
-  main.innerHTML = names2;  
+presidents[4] = {
+    number: 5,
+    name: "James Monroe",
+    party: "Democratic-Republican",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "jamesmonroe.jpg",
 }
 
-//document.getElementById("little").innerHTML = `<img src="images/${presidents[0].image()}">`;
+presidents[5] = {
+    number: 6,
+    name: "John Quincy Adams",
+    party: "Democratic-Republican",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "johnquincyadams.jpg",
+}
+
+presidents[6] = {
+    number: 7,
+    name: "Andrew Jackson",
+    party: "Democrat",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "andrewjackson.jpg",
+}
+
+presidents[7] = {
+    number: 8,
+    name: "Martin Van Buren",
+    party: "Democrat",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "martinvanburen.jpg"
+}
+
+presidents[8] = {
+    number: 9,
+    name: "William Henry Harrison",
+    party: "Whig",
+    terms: 1,
+    diedInOffice: true,
+    assassinated: false,
+    previouslyVP: false,
+    image: "williamhenryharrison.jpg"
+}
+
+presidents[9] = {
+    number: 10,
+    name: "John Tyler",
+    party: "Independent",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "johntyler.jpg",
+}
+
+presidents[10] = {
+    number: 11,
+    name: "James K. Polk",
+    party: "Democrat",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "jameskpolk.jpg",
+}
+
+presidents[11] = {
+    number: 12,
+    name: "Zachary Taylor",
+    party: "Whig",
+    terms: 1,
+    diedInOffice: true,
+    assassinated: false,
+    previouslyVP: false,
+    image: "zacharytaylor.jpg",
+}
+
+presidents[12] = {
+    number: 13,
+    name: "Millard Fillmore",
+    party: "Whig",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "millardfillmore.jpg",
+}
+
+presidents[13] = {
+    number: 14,
+    name: "Franklin Pierce",
+    party: "Democrat",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "franklinpierce.jpg",
+}
+
+presidents[14] = {
+    number: 15,
+    name: "James Buchanan",
+    party: "Democrat",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "jamesbuchanan.jpg",
+}
+
+presidents[15] = {
+    number: 16,
+    name: "Abraham Lincoln",
+    party: "Republican",
+    terms: 2,
+    diedInOffice: true,
+    assassinated: true,
+    previouslyVP: false,
+    image: "abrahamlincoln.jpg",
+}
+
+presidents[16] = {
+    number: 17,
+    name: "Andrew Johnson",
+    party: "Democrat",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "andrewjohnson.jpg",
+}
+
+presidents[17] = {
+    number: 18,
+    name: "Ulysses S. Grant",
+    party: "Republican",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "ulyssessgrant.jpg",
+}
+
+presidents[18] = {
+    number: 19,
+    name: "Rutherford B. Hayes",
+    party: "Republican",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "rutherfordbhayes.jpg",
+}
+
+presidents[19] = {
+    number: 20,
+    name: "James A. Garfield",
+    party: "Republican",
+    terms: 1,
+    diedInOffice: true,
+    assassinated: true,
+    previouslyVP: false,
+    image: "jamesagarfield.jpg",
+}
+
+presidents[20] = {
+    number: 21,
+    name: "Chester A. Arthur",
+    party: "Republican",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "chesteraarthur.jpg",
+}
+
+presidents[21] = {
+    number: 22,
+    name: "Grover Cleveland",
+    party: "Democrat",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "grovercleveland.jpg",
+}
+
+presidents[25] = {
+    number: 26,
+    name: "Theodore Roosevelt",
+    party: "Republican",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "theodoreroosevelt.jpg",
+}
+
+presidents[26] = {
+    number: 27,
+    name: "William Howard Taft",
+    party: "Republican",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "williamhowardtaft.jpg",
+}
+
+presidents[27] = {
+    number: 28,
+    name: "Woodrow Wilson",
+    party: "Democrat",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "woodrowwilson.jpg"
+}
+
+presidents[31] = {
+    number: 32,
+    name: "Franklin D. Roosevelt",
+    party: "Democrat",
+    terms: 4,
+    diedInOffice: true,
+    assassinated: false,
+    previouslyVP: false,
+    image: "franklindroosevelt.jpg",
+}
+
+presidents[34] = {
+    number: 35,
+    name: "John F. Kennedy",
+    party: "Democrat",
+    terms: 1,
+    diedInOffice: true,
+    assassinated: true,
+    previouslyVP: false,
+    image: "johnfkennedy.jpg",
+}
+
+presidents[41] = {
+    number: 42,
+    name: "Bill Clinton",
+    party: "Democrat",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "billclinton.jpg",
+}
+
+presidents[42] = {
+    number: 43,
+    name: "George W. Bush",
+    party: "Republican",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "georgewbush.jpg",
+}
+
+presidents[43] = {
+    number: 44,
+    name: "Barack Obama",
+    party: "Democrat",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "barackobama.jpg",
+}
+
+presidents[44] = {
+    number: 45,
+    name: "Donald Trump",
+    party: "Republican",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "donaldtrump.jpg",
+}
+
+presidents[45] = {
+    number: 46,
+    name: "Joe Biden",
+    party: "Democrat",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "joebiden.jpg",
+}
+
+presidents.forEach(president => {
+    //Declarations
+    let newDiv = document.createElement("div");
+    let presNumName = document.createElement("p");
+    let presParty = document.createElement("p");
+    let presImg = document.createElement("img");
+
+    //Assignments
+    newDiv.className = "floatingHeads";
+    presNumName.innerHTML = `${president.number}. ${president.name}`;
+    presParty.innerHTML = president.party;
+    presImg.src = `images/${president.image}`;
+
+    //Combining
+    newDiv.appendChild(presImg);
+    newDiv.appendChild(presNumName);
+    newDiv.appendChild(presParty);
+    presidentsSpace.appendChild(newDiv);
+})
+
+// for (x = 0; x <= 21; x++) {
+//     let newDiv = document.createElement("div");
+//     newDiv.innerHTML = presidents[x].name;
+//     presidentsSpace.appendChild(newDiv);    
+// }
+
+
+
+
+
+function filterPresidents() {
+    let partyValue = document.getElementById("party").value;
+    let termsValue = document.getElementById("terms").value;
+    
+    let filteredPresidents = presidents.filter (pres =>      (partyValue === "" || pres.party === partyValue) 
+    && 
+    (termsValue === "" || pres.terms.toString() == termsValue)
+    );
+
+    theResults(filteredPresidents);
+}
+
+function theResults (filteredPresidents) {
+    presidentsSpace.innerHTML = "";
+    
+    filteredPresidents.forEach(president => 
+        {
+            let newDiv = document.createElement("div");
+            let newImg = document.createElement("img");
+            
+            newDiv.innerHTML = president.name;
+            newImg.src = `images/${president.image}`;
+
+            console.log(newDiv.innerHTML);
+            presidentsSpace.appendChild(newImg);
+        }
+    );
+
+}

@@ -1,19 +1,88 @@
-li {
+* {
   list-style: none;
 }
 
-select {
-  width: 100px;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-button {
-  width: 100px;
+/*HEADER*/
+#header {
+  background-color: gray;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
 }
 
-#reset {
-  margin-left: 104px;
+#pageTitle {
+  margin-right: auto;
 }
 
-#Democrat {
-  background-color: blue;
+#menu {
+  margin-left: auto;
+  font-size: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+/*FOOTER*/
+#footer {
+  background-color: gray;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+}
+
+#footer i {
+  cursor: pointer;
+}
+
+/*PRESIDENTS SPACE*/
+#presidentsSpace {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#presidentsSpace li {
+  position: relative;
+}
+
+#presidentsSpace img {
+  height: 200px;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center;
+}
+
+.floatingHeads {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 20px;
+}
+
+.floatingHeads p {
+  margin: 1px 0px;
+}
+
+.floatingHeads img {
+  margin: 7px 0px;
+}
+
+/*FILTERS*/
+#filters {
+  margin-bottom: 100px;
 }
