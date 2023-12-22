@@ -1,7 +1,11 @@
 let body = document.body;
 let presidentsSpace = document.getElementById("presidentsSpace");
+let filters = document.getElementById("filters");
+let display = document.getElementById("display");
+let sort = document.getElementById("sort");
 
 let presidents = [];
+
 
 presidents[0] = {
     number: 1,
@@ -245,6 +249,39 @@ presidents[21] = {
     image: "grovercleveland.jpg",
 }
 
+presidents[22] = {
+    number: 23,
+    name: "Benjamin Harrison",
+    party: "Republican",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "benjaminharrison.jpg",
+}
+
+presidents[23] = {
+    number: 24,
+    name: "Grover Cleveland",
+    party: "Democrat",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "grovercleveland.jpg",
+}
+
+presidents[24] = {
+    number: 25,
+    name: "William McKinley",
+    party: "Republican",
+    terms: 2,
+    diedInOffice: true,
+    assassinated: true,
+    previouslyVP: false,
+    image: "williammckinley.jpg",
+}
+
 presidents[25] = {
     number: 26,
     name: "Theodore Roosevelt",
@@ -278,6 +315,39 @@ presidents[27] = {
     image: "woodrowwilson.jpg"
 }
 
+presidents[28] = {
+    number: 29,
+    name: "Warren G. Harding",
+    party: "Republican",
+    terms: 1,
+    diedInOffice: true,
+    assassinated: false,
+    previouslyVP: false,
+    image: "warrengharding.jpg"
+}
+
+presidents[29] = {
+    number: 30,
+    name: "Calvin Coolidge",
+    party: "Republican",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "calvincoolidge.jpg"
+}
+
+presidents[30] = {
+    number: 31,
+    name: "Herbert Hoover",
+    party: "Republican",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "herberthoover.jpg"
+}
+
 presidents[31] = {
     number: 32,
     name: "Franklin D. Roosevelt",
@@ -289,6 +359,28 @@ presidents[31] = {
     image: "franklindroosevelt.jpg",
 }
 
+presidents[32] = {
+    number: 33,
+    name: "Harry S. Truman",
+    party: "Democrat",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "harrystruman.jpg",
+}
+
+presidents[33] = {
+    number: 34,
+    name: "Dwight D. Eisenhower",
+    party: "Republican",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "dwightdeisenhower.jpg",
+}
+
 presidents[34] = {
     number: 35,
     name: "John F. Kennedy",
@@ -298,6 +390,72 @@ presidents[34] = {
     assassinated: true,
     previouslyVP: false,
     image: "johnfkennedy.jpg",
+}
+
+presidents[35] = {
+    number: 36,
+    name: "Lyndon B. Johnson",
+    party: "Democrat",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "lyndonbjohnson.jpg",
+}
+
+presidents[36] = {
+    number: 37,
+    name: "Richard Nixon",
+    party: "Republican",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "richardmnixon.jpg",
+}
+
+presidents[37] = {
+    number: 38,
+    name: "Gerald Ford",
+    party: "Republican",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "geraldford.jpg",
+}
+
+presidents[38] = {
+    number: 39,
+    name: "Jimmy Carter",
+    party: "Democrat",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "jimmycarter.jpg",
+}
+
+presidents[39] = {
+    number: 40,
+    name: "Ronald Reagan",
+    party: "Republican",
+    terms: 2,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: false,
+    image: "ronaldreagan.jpg",
+}
+
+presidents[40] = {
+    number: 41,
+    name: "George Bush",
+    party: "Republican",
+    terms: 1,
+    diedInOffice: false,
+    assassinated: false,
+    previouslyVP: true,
+    image: "georgehwbush.jpg",
 }
 
 presidents[41] = {
@@ -355,7 +513,41 @@ presidents[45] = {
     image: "joebiden.jpg",
 }
 
-presidents.forEach(president => {
+function createPresidentDivs1(presidentsArg) {
+    presidentsSpace.innerHTML = "";
+    /**
+     * If Condition exist solely to deal with the fact that Grover Cleveland, the 22nd
+     * president and presidents[21], also served as the 24th president. He's the only
+     * United States president to serve two non-consecutive terms. 
+     * 
+     * Thus he appears twice in the default listing of presidents, but in most cases he
+     * only appears once. For example, when filtering the presidents for only "Democrats"
+     * Cleveland must only appear once.
+     * 
+     * In the object Cleveland appears twice but only for organizational purposes. In 
+     * most filtered versions of the list, Cleveland only appears once (or as a single
+     * div) and has the label "22. & 24. Grover Cleveland"
+     */
+    if (presidentsArg !== presidents) {
+        presidentsArg.forEach(president => {
+            if (president.number == 22) {
+                let nonCon = president;
+                nonCon.number = "22. & 24";
+                createPresidentDivs2(nonCon);
+            } else if (president.number == 24) {
+                return;
+            } else {
+                createPresidentDivs2(president)
+            }
+        })
+    } else {
+        presidentsArg.forEach(president => {
+            createPresidentDivs2(president);
+        })        
+    }
+}
+
+function createPresidentDivs2(president) {
     //Declarations
     let newDiv = document.createElement("div");
     let presNumName = document.createElement("p");
@@ -372,45 +564,66 @@ presidents.forEach(president => {
     newDiv.appendChild(presImg);
     newDiv.appendChild(presNumName);
     newDiv.appendChild(presParty);
-    presidentsSpace.appendChild(newDiv);
-})
-
-// for (x = 0; x <= 21; x++) {
-//     let newDiv = document.createElement("div");
-//     newDiv.innerHTML = presidents[x].name;
-//     presidentsSpace.appendChild(newDiv);    
-// }
-
-
-
+    presidentsSpace.appendChild(newDiv);   
+}
 
 
 function filterPresidents() {
-    let partyValue = document.getElementById("party").value;
-    let termsValue = document.getElementById("terms").value;
-    
-    let filteredPresidents = presidents.filter (pres =>      (partyValue === "" || pres.party === partyValue) 
-    && 
-    (termsValue === "" || pres.terms.toString() == termsValue)
+    let partyValues = getCheckedValues("party");
+    let termsValues = getCheckedValues("terms");
+    let diedInOfficeValues = getCheckedValues("diedInOffice");
+    let assassinatedValues = getCheckedValues("assassinated");
+  
+    let filteredPresidents = presidents.filter(pres =>
+      (partyValues.length === 0 || partyValues.includes(pres.party)) &&
+      (termsValues.length === 0 || termsValues.includes(pres.terms.toString())) &&
+      (diedInOfficeValues.length === 0 || diedInOfficeValues.includes(pres.diedInOffice.toString())) &&
+      (assassinatedValues.length === 0 || assassinatedValues.includes(pres.assassinated.toString()))
     );
+  
+    createPresidentDivs1(filteredPresidents);
+    filters.close();
+  }
+  
+  function getCheckedValues(name) {
+    let checkboxes = document.getElementsByName(name);
+    let values = [];
+    checkboxes.forEach(checkbox => {
+      if (checkbox.checked) {
+        values.push(checkbox.value);
+      }
+    });
+    return values;
+  }
 
-    theResults(filteredPresidents);
-}
+  
+  createPresidentDivs1(presidents);
+  
+  function testFunction() {
+      let theCSS = document.documentElement;
+      theCSS.style.setProperty("--main-color", "lightblue");
+      theCSS.style.setProperty("--main-color-hover", "blue");
+    }
 
-function theResults (filteredPresidents) {
-    presidentsSpace.innerHTML = "";
-    
-    filteredPresidents.forEach(president => 
-        {
-            let newDiv = document.createElement("div");
-            let newImg = document.createElement("img");
-            
-            newDiv.innerHTML = president.name;
-            newImg.src = `images/${president.image}`;
 
-            console.log(newDiv.innerHTML);
-            presidentsSpace.appendChild(newImg);
-        }
-    );
 
-}
+
+    function openFilter() {
+        filters.showModal();
+    }
+
+    function closeFilter() {
+        filters.close();
+    }
+
+    function openMenu() {
+        menu.showModal();
+    }
+
+    function openDisplay() {
+        display.showModal();
+    }
+
+    function openSort() {
+        sort.showModal();
+    }

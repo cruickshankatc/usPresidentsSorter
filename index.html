@@ -8,29 +8,90 @@
 <body>
   <section id="header">
     <h1 id="pageTitle">PresidentsFilter</h1>
-    <i id="menu" class="fas fa-bars"></i>
+    <div id="menuIcon"><i class="fas fa-bars" onclick="openMenu()"></i></div>
   </section>
   <section id="presidentsSpace">
     
   </section>
-  <section id="filters">
-    <select name="party" id="party">
-      <option value="" class="placeholder" disabled selected>--Party--</option>
-      <option value="Republican">Republican</option>
-      <option value="Democrat">Democrat</option>
-    </select>
-    <select name="terms" id="terms">
-      <option value="" class="placeholder"  disabled selected>--Terms--</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="4">Four</option>
-    </select>
-    <button onclick="filterPresidents()">Click Here!</button>
-  </section>
+  <dialog id="filters" class="popups">
+    <div id="party">
+      <span>Party:</span>
+      <label>
+        <input type="checkbox" name="party" value="Republican"> Republican
+      </label>
+      <label>
+        <input type="checkbox" name="party" value="Democrat"> Democrat
+      </label>
+    </div>
+
+    <div id="terms">
+      <span>Terms:</span>
+      <label>
+        <input type="checkbox" name="terms" value="1"> One
+      </label>
+      <label>
+        <input type="checkbox" name="terms" value="2"> Two
+      </label>
+      <label>
+        <input type="checkbox" name="terms" value="4"> Four
+      </label>
+    </div>
+  
+    <div id="diedInOffice">
+      <span>Died In Office:</span>
+      <label>
+        <input type="checkbox" name="diedInOffice" value="true"> Yes
+      </label>
+      <label>
+        <input type="checkbox" name="diedInOffice" value="false"> No
+      </label>
+    </div>
+  
+    <div id="assassinated">
+      <span>Assassinated:</span>
+      <label>
+        <input type="checkbox" name="assassinated" value="true"> Yes
+      </label>
+      <label>
+        <input type="checkbox" name="assassinated" value="false"> No
+      </label>
+    </div>
+  
+    <button onclick="filterPresidents()">Filter</button>
+    <button onclick="closeFilter()">Cancel</button>
+    <button onclick="testFunction()">Test</button>
+  </dialog>
+  <dialog id="menu" class="popups">
+    <div id="themeSelect">
+      <span>Theme:</span>
+      <p>Light</p>
+      <p>Dark</p>
+      <p>Patriotic</p>
+      <p>Gray</p>
+    </div>
+  </dialog>
+ 
+  <dialog id="display" class="popups">
+      <span>Underneath the president's name, what should be displayed?</span>
+      <p>Years in office</p>
+      <p>Party</p>
+      <p>Birth year</p>
+      <p>Vice President</p>
+  </dialog>
+ 
+  <dialog id="sort" class="popups">
+      <span>Sort by:</span>
+      <p>Name</p>
+      <p>Party</p>
+      <p>Birthdate</p>
+      <p>Gray</p>
+      <p>Days in Office</p>
+  </dialog>
+
   <section id="footer">
-    <i class="fas fa-filter icon"></i>
-    <i class="fas fa-desktop icon"></i>
-    <i class="fas fa-sort icon"></i>
+    <i class="fas fa-filter icon" onclick="openFilter()"></i>
+    <i class="fas fa-desktop icon" onclick="openDisplay()"></i>
+    <i class="fas fa-sort icon" onclick="openSort()"></i>
   </section>
 <script src="main.js"></script>
 </body>
