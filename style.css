@@ -5,11 +5,15 @@
 :root {
   --main-color: gray;
   --main-color-hover: rgb(61, 61, 61);
+  --backdrop-color: white;
+  --text-color: black;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--backdrop-color);
+  color: var(--text-color);
 }
 
 /*HEADER*/
@@ -30,12 +34,26 @@ body {
 
 #menuIcon {
   margin-left: auto;
-  padding-right: 30px;
+  padding-right: 20px;
   font-size: 30px;
 }
 
 #menuIcon i {
   cursor: pointer;
+}
+
+#menuIcon2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+#menuIcon2:hover {
+  background-color: var(--main-color-hover);
 }
 
 /*FOOTER*/
@@ -97,13 +115,22 @@ body {
   opacity: .7;
 }
 
-.fas {
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
   border-radius: 50px;
   background-color: var(--main-color);
   transition: background-color 0.3s ease;
+  cursor: pointer;
+  width: 30px;
 }
 
-.fas:hover {
+.icons:hover {
   background-color: var(--main-color-hover);
+}
+
+.popups li {
+  cursor: pointer;
 }

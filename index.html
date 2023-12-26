@@ -8,7 +8,7 @@
 <body>
   <section id="header">
     <h1 id="pageTitle">PresidentsFilter</h1>
-    <div id="menuIcon"><i class="fas fa-bars" onclick="openMenu()"></i></div>
+    <div id="menuIcon"><i id="menuIcon2" class="fas fa-bars" onclick="openMenu()"></i></div>
   </section>
   <section id="presidentsSpace">
     
@@ -59,39 +59,41 @@
   
     <button onclick="filterPresidents()">Filter</button>
     <button onclick="closeFilter()">Cancel</button>
-    <button onclick="testFunction()">Test</button>
   </dialog>
   <dialog id="menu" class="popups">
     <div id="themeSelect">
       <span>Theme:</span>
-      <p>Light</p>
-      <p>Dark</p>
-      <p>Patriotic</p>
-      <p>Gray</p>
+      <ul>
+        <li onclick="themeChange('light')">Light</li>
+        <li onclick="themeChange('dark')">Dark</li>
+        <li onclick="themeChange('patriotic')">Patriotic</li>
+        <li onclick="themeChange('gray')">Gray</li>
+      </ul>
     </div>
   </dialog>
  
   <dialog id="display" class="popups">
       <span>Underneath the president's name, what should be displayed?</span>
-      <p>Years in office</p>
-      <p>Party</p>
-      <p>Birth year</p>
-      <p>Vice President</p>
+      <ul>
+        <li>Years in office</li>
+        <li>Party</li>
+        <li>Birth year</li>
+        <li>Vice President</li>
+      </ul>
   </dialog>
  
   <dialog id="sort" class="popups">
       <span>Sort by:</span>
-      <p>Name</p>
-      <p>Party</p>
-      <p>Birthdate</p>
-      <p>Gray</p>
-      <p>Days in Office</p>
+      <li onclick="presSort('byName')">Name</li>
+      <li onclick="presSort('byParty')">Party</li>
+      <li>Birthdate</li>
+      <li onclick="presSort('byDaysInOffice')">Days in Office</li>
   </dialog>
 
   <section id="footer">
-    <i class="fas fa-filter icon" onclick="openFilter()"></i>
-    <i class="fas fa-desktop icon" onclick="openDisplay()"></i>
-    <i class="fas fa-sort icon" onclick="openSort()"></i>
+    <div class="icons" onclick="openFilter()"><i class="fas fa-filter icon"></i></div>
+    <div class="icons" onclick="openDisplay()"><i class="fas fa-desktop icon"></i></div>
+    <div class="icons" onclick="openSort()"><i class="fas fa-sort icon"></i></div>
   </section>
 <script src="main.js"></script>
 </body>

@@ -12,6 +12,7 @@ presidents[0] = {
     name: "George Washington",
     party: "Independent",
     terms: 2,
+    daysInOffice: 2865,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -23,6 +24,7 @@ presidents[1] = {
     name: "John Adams",
     party: "Federalist",
     terms: 1,
+    daysInOffice: 1460,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -34,6 +36,7 @@ presidents[2] = {
     name: "Thomas Jefferson",
     party: "Democratic-Republican",
     terms: 2,
+    daysInOffice: 2922,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -45,6 +48,7 @@ presidents[3] = {
     name: "James Madison",
     party: "Democratic-Republican",
     terms: 2,
+    daysInOffice: 2922,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -56,6 +60,7 @@ presidents[4] = {
     name: "James Monroe",
     party: "Democratic-Republican",
     terms: 2,
+    daysInOffice: 2922,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -67,6 +72,7 @@ presidents[5] = {
     name: "John Quincy Adams",
     party: "Democratic-Republican",
     terms: 1,
+    daysInOffice: 1461,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -78,6 +84,7 @@ presidents[6] = {
     name: "Andrew Jackson",
     party: "Democrat",
     terms: 2,
+    daysInOffice: 2922,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -89,6 +96,7 @@ presidents[7] = {
     name: "Martin Van Buren",
     party: "Democrat",
     terms: 1,
+    daysInOffice: 1461,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -100,6 +108,7 @@ presidents[8] = {
     name: "William Henry Harrison",
     party: "Whig",
     terms: 1,
+    daysInOffice: 31,
     diedInOffice: true,
     assassinated: false,
     previouslyVP: false,
@@ -111,6 +120,7 @@ presidents[9] = {
     name: "John Tyler",
     party: "Independent",
     terms: 1,
+    daysInOffice: 1430,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -122,6 +132,7 @@ presidents[10] = {
     name: "James K. Polk",
     party: "Democrat",
     terms: 1,
+    daysInOffice: 1461,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -133,6 +144,7 @@ presidents[11] = {
     name: "Zachary Taylor",
     party: "Whig",
     terms: 1,
+    daysInOffice: 492,
     diedInOffice: true,
     assassinated: false,
     previouslyVP: false,
@@ -144,6 +156,7 @@ presidents[12] = {
     name: "Millard Fillmore",
     party: "Whig",
     terms: 1,
+    daysInOffice: 969,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -155,6 +168,7 @@ presidents[13] = {
     name: "Franklin Pierce",
     party: "Democrat",
     terms: 1,
+    daysInOffice: 1461,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -166,6 +180,7 @@ presidents[14] = {
     name: "James Buchanan",
     party: "Democrat",
     terms: 1,
+    daysInOffice: 1461,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -177,6 +192,7 @@ presidents[15] = {
     name: "Abraham Lincoln",
     party: "Republican",
     terms: 2,
+    daysInOffice: 1503,
     diedInOffice: true,
     assassinated: true,
     previouslyVP: false,
@@ -188,6 +204,7 @@ presidents[16] = {
     name: "Andrew Johnson",
     party: "Democrat",
     terms: 1,
+    daysInOffice: 1419,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -199,6 +216,7 @@ presidents[17] = {
     name: "Ulysses S. Grant",
     party: "Republican",
     terms: 2,
+    daysInOffice: 2922,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -210,6 +228,7 @@ presidents[18] = {
     name: "Rutherford B. Hayes",
     party: "Republican",
     terms: 1,
+    daysInOffice: 1461,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -221,6 +240,7 @@ presidents[19] = {
     name: "James A. Garfield",
     party: "Republican",
     terms: 1,
+    daysInOffice: 199,
     diedInOffice: true,
     assassinated: true,
     previouslyVP: false,
@@ -232,6 +252,7 @@ presidents[20] = {
     name: "Chester A. Arthur",
     party: "Republican",
     terms: 1,
+    daysInOffice: 1262,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -243,6 +264,7 @@ presidents[21] = {
     name: "Grover Cleveland",
     party: "Democrat",
     terms: 2,
+    daysInOffice: 2922,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -254,6 +276,7 @@ presidents[22] = {
     name: "Benjamin Harrison",
     party: "Republican",
     terms: 1,
+    daysInOffice: 1461,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -276,6 +299,7 @@ presidents[24] = {
     name: "William McKinley",
     party: "Republican",
     terms: 2,
+    daysInOffice: 1654,
     diedInOffice: true,
     assassinated: true,
     previouslyVP: false,
@@ -287,6 +311,7 @@ presidents[25] = {
     name: "Theodore Roosevelt",
     party: "Republican",
     terms: 2,
+    daysInOffice: 2728,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -298,6 +323,7 @@ presidents[26] = {
     name: "William Howard Taft",
     party: "Republican",
     terms: 1,
+    daysInOffice: 1461,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -309,6 +335,7 @@ presidents[27] = {
     name: "Woodrow Wilson",
     party: "Democrat",
     terms: 2,
+    daysInOffice: 2922,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -320,6 +347,7 @@ presidents[28] = {
     name: "Warren G. Harding",
     party: "Republican",
     terms: 1,
+    daysInOffice: 881,
     diedInOffice: true,
     assassinated: false,
     previouslyVP: false,
@@ -331,6 +359,7 @@ presidents[29] = {
     name: "Calvin Coolidge",
     party: "Republican",
     terms: 2,
+    daysInOffice: 2041,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -342,6 +371,7 @@ presidents[30] = {
     name: "Herbert Hoover",
     party: "Republican",
     terms: 1,
+    daysInOffice: 1461,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -353,6 +383,7 @@ presidents[31] = {
     name: "Franklin D. Roosevelt",
     party: "Democrat",
     terms: 4,
+    daysInOffice: 4422,
     diedInOffice: true,
     assassinated: false,
     previouslyVP: false,
@@ -364,6 +395,7 @@ presidents[32] = {
     name: "Harry S. Truman",
     party: "Democrat",
     terms: 2,
+    daysInOffice: 2840,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -375,6 +407,7 @@ presidents[33] = {
     name: "Dwight D. Eisenhower",
     party: "Republican",
     terms: 2,
+    daysInOffice: 2922,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -386,6 +419,7 @@ presidents[34] = {
     name: "John F. Kennedy",
     party: "Democrat",
     terms: 1,
+    daysInOffice: 1036,
     diedInOffice: true,
     assassinated: true,
     previouslyVP: false,
@@ -397,6 +431,7 @@ presidents[35] = {
     name: "Lyndon B. Johnson",
     party: "Democrat",
     terms: 2,
+    daysInOffice: 1886,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -408,6 +443,7 @@ presidents[36] = {
     name: "Richard Nixon",
     party: "Republican",
     terms: 2,
+    daysInOffice: 2027,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -419,6 +455,7 @@ presidents[37] = {
     name: "Gerald Ford",
     party: "Republican",
     terms: 1,
+    daysInOffice: 895,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -430,6 +467,7 @@ presidents[38] = {
     name: "Jimmy Carter",
     party: "Democrat",
     terms: 1,
+    daysInOffice: 1461,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -441,6 +479,7 @@ presidents[39] = {
     name: "Ronald Reagan",
     party: "Republican",
     terms: 2,
+    daysInOffice: 2922,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -452,6 +491,7 @@ presidents[40] = {
     name: "George Bush",
     party: "Republican",
     terms: 1,
+    daysInOffice: 1461,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
@@ -463,6 +503,7 @@ presidents[41] = {
     name: "Bill Clinton",
     party: "Democrat",
     terms: 2,
+    daysInOffice: 2922,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -474,6 +515,7 @@ presidents[42] = {
     name: "George W. Bush",
     party: "Republican",
     terms: 2,
+    daysInOffice: 2922,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -485,6 +527,7 @@ presidents[43] = {
     name: "Barack Obama",
     party: "Democrat",
     terms: 2,
+    daysInOffice: 2922,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -496,6 +539,7 @@ presidents[44] = {
     name: "Donald Trump",
     party: "Republican",
     terms: 1,
+    daysInOffice: 1461,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -507,6 +551,7 @@ presidents[45] = {
     name: "Joe Biden",
     party: "Democrat",
     terms: 1,
+    daysInOffice: 1069,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
@@ -599,11 +644,80 @@ function filterPresidents() {
   
   createPresidentDivs1(presidents);
   
-  function testFunction() {
-      let theCSS = document.documentElement;
-      theCSS.style.setProperty("--main-color", "lightblue");
-      theCSS.style.setProperty("--main-color-hover", "blue");
+  function themeChange(themeStyle) {
+      let theCSS = document.documentElement; 
+      let mainColor;
+      let mainColorHover;
+      let backdropColor;
+      let textColor;
+
+      switch (themeStyle) {
+        case "light":
+          mainColor = "#ffffff";        // White
+          mainColorHover = "#f0f0f0";   // Light Gray
+          backdropColor = "#ffffff";    // White
+          textColor = "#000000";        // Black
+          break;
+    
+        case "dark":
+          mainColor = "#282c35";        // Dark Gray-Blue
+          mainColorHover = "#3e4452";   // Slightly Lighter Gray-Blue
+          backdropColor = "#1e222b";    // Darker Gray-Blue
+          textColor = "#ffffff";        // White
+          break;
+    
+        case "patriotic":
+          mainColor = "#c62828";        // Darker Red
+          mainColorHover = "#d32f2f";   // Slightly Lighter Red
+          backdropColor = "#1976D2";    // Dark Blue
+          textColor = "#ffffff";        // White
+          break;
+    
+        case "gray":
+          mainColor = "#757575";        // Dark Gray
+          mainColorHover = "#9e9e9e";   // Lighter Gray
+          backdropColor = "#eeeeee";    // Even Lighter Gray
+          textColor = "#000000";        // Black
+          break;
+      }
+
+      theCSS.style.setProperty("--main-color", mainColor);
+      theCSS.style.setProperty("--main-color-hover", mainColorHover);
+      theCSS.style.setProperty("--backdrop-color", backdropColor);
+      theCSS.style.setProperty("--text-color", textColor);
+
+      menu.close();
     }
+
+    function presSort(sortationMethod) {
+        let presSpace = document.getElementById("presidentsSpace");
+        let presSpaceDivs = presSpace.querySelectorAll('.floatingHeads');
+        let presSpaceArray = Array.from(presSpaceDivs);
+
+        switch (sortationMethod) {
+            case "byName":
+                presSpaceArray.sort((a, b) => {
+                    const lastNameA = a.querySelector('p:nth-child(2)').textContent.split(" ").pop();
+                    const lastNameB = b.querySelector('p:nth-child(2)').textContent.split(" ").pop();
+                    return lastNameA.localeCompare(lastNameB);
+                });
+                break;
+            case "byParty":
+                presSpaceArray.sort((a, b) => {
+                    return a.querySelector('p:nth-child(3)').textContent.localeCompare(b.querySelector('p:nth-child(3)').textContent);
+                });
+                break;
+            case "byDaysInOffice":
+                break;
+        }
+    
+        
+        // Now, append the sorted array back to the container
+        presSpaceArray.forEach(div => presSpace.appendChild(div));
+
+        sort.close();
+    }
+
 
 
 
@@ -627,3 +741,4 @@ function filterPresidents() {
     function openSort() {
         sort.showModal();
     }
+
