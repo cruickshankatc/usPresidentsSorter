@@ -75,10 +75,10 @@
   <dialog id="display" class="popups">
       <span>Underneath the president's name, what should be displayed?</span>
       <ul>
-        <li>Years in office</li>
-        <li>Party</li>
-        <li>Birth year</li>
-        <li>Vice President</li>
+        <li onclick="presDisplay('yearsInOffice')">Years in office</li>
+        <li onclick="presDisplay('party')">Party</li>
+        <li onclick="presDisplay('birthYear')">Birth year</li>
+        <li onclick="presDisplay('vicePresident')">Vice President</li>
       </ul>
   </dialog>
  
@@ -86,7 +86,7 @@
       <span>Sort by:</span>
       <li onclick="presSort('byName')">Name</li>
       <li onclick="presSort('byParty')">Party</li>
-      <li>Birthdate</li>
+      <li onclick="presSort('byBirthYear')">Birth Year</li>
       <li onclick="presSort('byDaysInOffice')">Days in Office</li>
   </dialog>
 

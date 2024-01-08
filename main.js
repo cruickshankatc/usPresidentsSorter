@@ -17,6 +17,9 @@ presidents[0] = {
     assassinated: false,
     previouslyVP: false,
     image: "georgewashington.jpg",
+    vicePresident: "John Adams",
+    yearsInOffice: "1789-1797",
+    birthYear: "1732"
 }
 
 presidents[1] = {
@@ -29,6 +32,9 @@ presidents[1] = {
     assassinated: false,
     previouslyVP: true,
     image: "johnadams.jpg",
+    vicePresident: "Thomas Jefferson",
+    yearsInOffice: "1797-1801",
+    birthYear: "1735"
 }
 
 presidents[2] = {
@@ -41,6 +47,9 @@ presidents[2] = {
     assassinated: false,
     previouslyVP: true,
     image: "thomasjefferson.jpg",
+    vicePresident: "Aaron Burr",
+    yearsInOffice: "1801-1809",
+    birthYear: "1743"
 }
 
 presidents[3] = {
@@ -53,6 +62,9 @@ presidents[3] = {
     assassinated: false,
     previouslyVP: false,
     image: "jamesmadison.jpg",
+    vicePresident: "George Clinton",
+    yearsInOffice: "1809-1817",
+    birthYear: "1751"
 }
 
 presidents[4] = {
@@ -65,6 +77,9 @@ presidents[4] = {
     assassinated: false,
     previouslyVP: false,
     image: "jamesmonroe.jpg",
+    vicePresident: "Daniel D. Tompkins",
+    yearsInOffice: "1817-1825",
+    birthYear: "1758"
 }
 
 presidents[5] = {
@@ -77,6 +92,9 @@ presidents[5] = {
     assassinated: false,
     previouslyVP: false,
     image: "johnquincyadams.jpg",
+    vicePresident: "John C. Calhoun",
+    yearsInOffice: "1825-1829",
+    birthYear: "1767"
 }
 
 presidents[6] = {
@@ -89,6 +107,9 @@ presidents[6] = {
     assassinated: false,
     previouslyVP: false,
     image: "andrewjackson.jpg",
+    vicePresident: "John C. Calhoun",
+    yearsInOffice: "1829-1837",
+    birthYear: "1767"
 }
 
 presidents[7] = {
@@ -100,7 +121,10 @@ presidents[7] = {
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
-    image: "martinvanburen.jpg"
+    image: "martinvanburen.jpg",
+    vicePresident: "Richard Mentor Johnson",
+    yearsInOffice: "1837-1841",
+    birthYear: "1782"
 }
 
 presidents[8] = {
@@ -112,7 +136,10 @@ presidents[8] = {
     diedInOffice: true,
     assassinated: false,
     previouslyVP: false,
-    image: "williamhenryharrison.jpg"
+    image: "williamhenryharrison.jpg",
+    vicePresident: "John Tyler",
+    yearsInOffice: "1841",
+    birthYear: "1773"
 }
 
 presidents[9] = {
@@ -125,6 +152,9 @@ presidents[9] = {
     assassinated: false,
     previouslyVP: true,
     image: "johntyler.jpg",
+    vicePresident: "Vacant",
+    yearsInOffice: "1841-1845",
+    birthYear: "1790"
 }
 
 presidents[10] = {
@@ -137,6 +167,9 @@ presidents[10] = {
     assassinated: false,
     previouslyVP: false,
     image: "jameskpolk.jpg",
+    vicePresident: "George M. Dallas",
+    yearsInOffice: "1845-1849",
+    birthYear: "1795"
 }
 
 presidents[11] = {
@@ -149,6 +182,9 @@ presidents[11] = {
     assassinated: false,
     previouslyVP: false,
     image: "zacharytaylor.jpg",
+    vicePresident: "Millard Fillmore",
+    yearsInOffice: "1849-1850",
+    birthYear: "1784"
 }
 
 presidents[12] = {
@@ -161,6 +197,9 @@ presidents[12] = {
     assassinated: false,
     previouslyVP: true,
     image: "millardfillmore.jpg",
+    vicePresident: "Vacant",
+    yearsInOffice: "1850-1853",
+    birthYear: "1800"
 }
 
 presidents[13] = {
@@ -173,6 +212,9 @@ presidents[13] = {
     assassinated: false,
     previouslyVP: false,
     image: "franklinpierce.jpg",
+    vicePresident: "William Rufus King",
+    yearsInOffice: "1853-1857",
+    birthYear: "1804"
 }
 
 presidents[14] = {
@@ -185,6 +227,9 @@ presidents[14] = {
     assassinated: false,
     previouslyVP: false,
     image: "jamesbuchanan.jpg",
+    vicePresident: "John C. Breckinridge",
+    yearsInOffice: "1857-1861",
+    birthYear: "1791"
 }
 
 presidents[15] = {
@@ -197,6 +242,9 @@ presidents[15] = {
     assassinated: true,
     previouslyVP: false,
     image: "abrahamlincoln.jpg",
+    vicePresident: "Hannibal Hamlin",
+    yearsInOffice: "1861-1865",
+    birthYear: "1809"
 }
 
 presidents[16] = {
@@ -209,6 +257,9 @@ presidents[16] = {
     assassinated: false,
     previouslyVP: true,
     image: "andrewjohnson.jpg",
+    vicePresident: "Vacant",
+    yearsInOffice: "1865-1869",
+    birthYear: "1808"
 }
 
 presidents[17] = {
@@ -221,6 +272,9 @@ presidents[17] = {
     assassinated: false,
     previouslyVP: false,
     image: "ulyssessgrant.jpg",
+    vicePresident: "Schuyler Colfax",
+    yearsInOffice: "1869-1877",
+    birthYear: "1822"
 }
 
 presidents[18] = {
@@ -233,6 +287,9 @@ presidents[18] = {
     assassinated: false,
     previouslyVP: false,
     image: "rutherfordbhayes.jpg",
+    vicePresident: "William A. Wheeler",
+    yearsInOffice: "1877-1881",
+    birthYear: "1822"
 }
 
 presidents[19] = {
@@ -245,6 +302,9 @@ presidents[19] = {
     assassinated: true,
     previouslyVP: false,
     image: "jamesagarfield.jpg",
+    vicePresident: "Chester A. Arthur",
+    yearsInOffice: "1881",
+    birthYear: "1831"
 }
 
 presidents[20] = {
@@ -257,6 +317,9 @@ presidents[20] = {
     assassinated: false,
     previouslyVP: true,
     image: "chesteraarthur.jpg",
+    vicePresident: "Vacant",
+    yearsInOffice: "1881-1885",
+    birthYear: "1829"
 }
 
 presidents[21] = {
@@ -269,6 +332,9 @@ presidents[21] = {
     assassinated: false,
     previouslyVP: false,
     image: "grovercleveland.jpg",
+    vicePresident: "Thomas A. Hendricks",
+    yearsInOffice: "1885-1889",
+    birthYear: "1837"
 }
 
 presidents[22] = {
@@ -281,6 +347,9 @@ presidents[22] = {
     assassinated: false,
     previouslyVP: false,
     image: "benjaminharrison.jpg",
+    vicePresident: "Levi P. Morton",
+    yearsInOffice: "1889-1893",
+    birthYear: "1833"
 }
 
 presidents[23] = {
@@ -288,10 +357,14 @@ presidents[23] = {
     name: "Grover Cleveland",
     party: "Democrat",
     terms: 2,
+    daysInOffice: 2922,
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
     image: "grovercleveland.jpg",
+    vicePresident: "Adlai Stevenson I",
+    yearsInOffice: "1897-1901",
+    birthYear: "1837"
 }
 
 presidents[24] = {
@@ -304,6 +377,9 @@ presidents[24] = {
     assassinated: true,
     previouslyVP: false,
     image: "williammckinley.jpg",
+    vicePresident: "Garret Hobart",
+    yearsInOffice: "1897-1901",
+    birthYear: "1843"
 }
 
 presidents[25] = {
@@ -316,6 +392,9 @@ presidents[25] = {
     assassinated: false,
     previouslyVP: true,
     image: "theodoreroosevelt.jpg",
+    vicePresident: "Charles W. Fairbanks",
+    yearsInOffice: "1901-1909",
+    birthYear: "1858"
 }
 
 presidents[26] = {
@@ -328,6 +407,9 @@ presidents[26] = {
     assassinated: false,
     previouslyVP: false,
     image: "williamhowardtaft.jpg",
+    vicePresident: "James S. Sherman",
+    yearsInOffice: "1909-1913",
+    birthYear: "1857"
 }
 
 presidents[27] = {
@@ -339,7 +421,10 @@ presidents[27] = {
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
-    image: "woodrowwilson.jpg"
+    image: "woodrowwilson.jpg",
+    vicePresident: "Thomas R. Marshall",
+    yearsInOffice: "1913-1921",
+    birthYear: "1856"
 }
 
 presidents[28] = {
@@ -351,7 +436,10 @@ presidents[28] = {
     diedInOffice: true,
     assassinated: false,
     previouslyVP: false,
-    image: "warrengharding.jpg"
+    image: "warrengharding.jpg",
+    vicePresident: "Calvin Coolidge",
+    yearsInOffice: "1921-1923",
+    birthYear: "1865"
 }
 
 presidents[29] = {
@@ -363,7 +451,10 @@ presidents[29] = {
     diedInOffice: false,
     assassinated: false,
     previouslyVP: true,
-    image: "calvincoolidge.jpg"
+    image: "calvincoolidge.jpg",
+    vicePresident: "Charles G. Dawes",
+    yearsInOffice: "1923-1925, 1925-1929",
+    birthYear: "1872"
 }
 
 presidents[30] = {
@@ -375,7 +466,10 @@ presidents[30] = {
     diedInOffice: false,
     assassinated: false,
     previouslyVP: false,
-    image: "herberthoover.jpg"
+    image: "herberthoover.jpg",
+    vicePresident: "Charles Curtis",
+    yearsInOffice: "1929-1933",
+    birthYear: "1874"
 }
 
 presidents[31] = {
@@ -388,6 +482,9 @@ presidents[31] = {
     assassinated: false,
     previouslyVP: false,
     image: "franklindroosevelt.jpg",
+    vicePresident: "John Nance Garner",
+    yearsInOffice: "1933-1945",
+    birthYear: "1882"
 }
 
 presidents[32] = {
@@ -400,6 +497,9 @@ presidents[32] = {
     assassinated: false,
     previouslyVP: true,
     image: "harrystruman.jpg",
+    vicePresident: "Albern W. Barkley",
+    yearsInOffice: "1945-1953",
+    birthYear: "1884"
 }
 
 presidents[33] = {
@@ -412,6 +512,9 @@ presidents[33] = {
     assassinated: false,
     previouslyVP: false,
     image: "dwightdeisenhower.jpg",
+    vicePresident: "Richard Nixon",
+    yearsInOffice: "1953-1961",
+    birthYear: "1890"
 }
 
 presidents[34] = {
@@ -424,6 +527,9 @@ presidents[34] = {
     assassinated: true,
     previouslyVP: false,
     image: "johnfkennedy.jpg",
+    vicePresident: "Lyndon B. Johnson",
+    yearsInOffice: "1961-1963",
+    birthYear: "1917"
 }
 
 presidents[35] = {
@@ -436,6 +542,9 @@ presidents[35] = {
     assassinated: false,
     previouslyVP: true,
     image: "lyndonbjohnson.jpg",
+    vicePresident: "Hubert Humphrey",
+    yearsInOffice: "1963-1969",
+    birthYear: "1908"
 }
 
 presidents[36] = {
@@ -448,6 +557,9 @@ presidents[36] = {
     assassinated: false,
     previouslyVP: true,
     image: "richardmnixon.jpg",
+    vicePresident: "Spiro Agnew",
+    yearsInOffice: "1969-1974",
+    birthYear: "1913"
 }
 
 presidents[37] = {
@@ -460,6 +572,9 @@ presidents[37] = {
     assassinated: false,
     previouslyVP: true,
     image: "geraldford.jpg",
+    vicePresident: "Nelson Rockefeller",
+    yearsInOffice: "1974-1977",
+    birthYear: "1913"
 }
 
 presidents[38] = {
@@ -472,6 +587,9 @@ presidents[38] = {
     assassinated: false,
     previouslyVP: false,
     image: "jimmycarter.jpg",
+    vicePresident: "Walter Mondale",
+    yearsInOffice: "1977-1981",
+    birthYear: "1924"
 }
 
 presidents[39] = {
@@ -484,6 +602,9 @@ presidents[39] = {
     assassinated: false,
     previouslyVP: false,
     image: "ronaldreagan.jpg",
+    vicePresident: "George Bush",
+    yearsInOffice: "1981-1989",
+    birthYear: "1911"
 }
 
 presidents[40] = {
@@ -496,6 +617,9 @@ presidents[40] = {
     assassinated: false,
     previouslyVP: true,
     image: "georgehwbush.jpg",
+    vicePresident: "Dan Quayle",
+    yearsInOffice: "1989-1993",
+    birthYear: "1924"
 }
 
 presidents[41] = {
@@ -508,6 +632,9 @@ presidents[41] = {
     assassinated: false,
     previouslyVP: false,
     image: "billclinton.jpg",
+    vicePresident: "Al Gore",
+    yearsInOffice: "1993-2001",
+    birthYear: "1946"
 }
 
 presidents[42] = {
@@ -520,6 +647,9 @@ presidents[42] = {
     assassinated: false,
     previouslyVP: false,
     image: "georgewbush.jpg",
+    vicePresident: "Dick Cheney",
+    yearsInOffice: "2001-2009",
+    birthYear: "1946"
 }
 
 presidents[43] = {
@@ -532,6 +662,9 @@ presidents[43] = {
     assassinated: false,
     previouslyVP: false,
     image: "barackobama.jpg",
+    vicePresident: "Joe Biden",
+    yearsInOffice: "2009-2017",
+    birthYear: "1961"
 }
 
 presidents[44] = {
@@ -544,6 +677,9 @@ presidents[44] = {
     assassinated: false,
     previouslyVP: false,
     image: "donaldtrump.jpg",
+    vicePresident: "Mike Pence",
+    yearsInOffice: "2017-2021",
+    birthYear: "1946"
 }
 
 presidents[45] = {
@@ -556,7 +692,11 @@ presidents[45] = {
     assassinated: false,
     previouslyVP: false,
     image: "joebiden.jpg",
+    vicePresident: "Kamala Harris",
+    yearsInOffice: "2021-present",
+    birthYear: "1942"
 }
+
 
 function createPresidentDivs1(presidentsArg) {
     presidentsSpace.innerHTML = "";
@@ -609,7 +749,9 @@ function createPresidentDivs2(president) {
     newDiv.appendChild(presImg);
     newDiv.appendChild(presNumName);
     newDiv.appendChild(presParty);
-    presidentsSpace.appendChild(newDiv);   
+    presidentsSpace.appendChild(newDiv);  
+    
+    fontResize()
 }
 
 
@@ -628,6 +770,7 @@ function filterPresidents() {
   
     createPresidentDivs1(filteredPresidents);
     filters.close();
+    fontResize()
   }
   
   function getCheckedValues(name) {
@@ -687,6 +830,7 @@ function filterPresidents() {
       theCSS.style.setProperty("--text-color", textColor);
 
       menu.close();
+      fontResize()
     }
 
     function presSort(sortationMethod) {
@@ -699,15 +843,76 @@ function filterPresidents() {
                 presSpaceArray.sort((a, b) => {
                     const lastNameA = a.querySelector('p:nth-child(2)').textContent.split(" ").pop();
                     const lastNameB = b.querySelector('p:nth-child(2)').textContent.split(" ").pop();
+                    console.log(typeof(lastNameA));
                     return lastNameA.localeCompare(lastNameB);
                 });
                 break;
             case "byParty":
                 presSpaceArray.sort((a, b) => {
-                    return a.querySelector('p:nth-child(3)').textContent.localeCompare(b.querySelector('p:nth-child(3)').textContent);
+                    let item0 = a.querySelector('p:nth-child(2)').textContent;
+                    let item1 = b.querySelector('p:nth-child(2)').textContent;
+                    
+                    let itemA = presidents.find(president => president.name === item0.split('.').slice(1).join('.').trim());
+                    let itemB = presidents.find(president => president.name === item1.split('.').slice(1).join('.').trim());
+            
+                    if (item0.includes("Cleveland") && item0.includes("&")) {
+                        itemA = presidents[21];
+                    }
+            
+                    if (item1.includes("Cleveland") && item1.includes("&")) {
+                        itemB = presidents[21];
+                    }
+
+                    let itemC = itemA.party;
+                    let itemD = itemB.party;
+            
+                    return itemC.localeCompare(itemD);
+
                 });
                 break;
             case "byDaysInOffice":
+                presSpaceArray.sort((a, b) => {
+                    let item0 = a.querySelector('p:nth-child(2)').textContent;
+                    let item1 = b.querySelector('p:nth-child(2)').textContent;
+                    
+                    let itemA = presidents.find(president => president.name === item0.split('.').slice(1).join('.').trim());
+                    let itemB = presidents.find(president => president.name === item1.split('.').slice(1).join('.').trim());
+            
+                    if (item0.includes("Cleveland") && item0.includes("&")) {
+                        itemA = presidents[21];
+                    }
+            
+                    if (item1.includes("Cleveland") && item1.includes("&")) {
+                        itemB = presidents[21];
+                    }
+            
+                    let itemC = itemA.daysInOffice;
+                    let itemD = itemB.daysInOffice;
+            
+                    return itemC - itemD;
+                });
+                break;
+            case "byBirthYear":
+                presSpaceArray.sort((a, b) => {
+                    let item0 = a.querySelector('p:nth-child(2)').textContent;
+                    let item1 = b.querySelector('p:nth-child(2)').textContent;
+                    
+                    let itemA = presidents.find(president => president.name === item0.split('.').slice(1).join('.').trim());
+                    let itemB = presidents.find(president => president.name === item1.split('.').slice(1).join('.').trim());
+            
+                    if (item0.includes("Cleveland") && item0.includes("&")) {
+                        itemA = presidents[21];
+                    }
+            
+                    if (item1.includes("Cleveland") && item1.includes("&")) {
+                        itemB = presidents[21];
+                    }
+            
+                    let itemC = itemA.birthYear;
+                    let itemD = itemB.birthYear;
+            
+                    return itemC - itemD;
+                });
                 break;
         }
     
@@ -716,9 +921,69 @@ function filterPresidents() {
         presSpaceArray.forEach(div => presSpace.appendChild(div));
 
         sort.close();
+        fontResize()
     }
 
 
+    function presDisplay(argument) {
+        let presSpace = document.getElementById("presidentsSpace");
+        let presSpaceDivs = presSpace.querySelectorAll('.floatingHeads');
+        let presSpaceArray = Array.from(presSpaceDivs);
+
+
+
+        presSpaceArray.forEach(arrayItem => {
+            let presName = arrayItem.querySelector('p:nth-child(2)').innerHTML;
+
+            if (presName.includes("Cleveland" && "&")) {
+                presName = presName.split('.').slice(2).join('.').trim(); 
+            } else {
+                presName = presName.split('.').slice(1).join('.').trim();   
+                console.log(presName);  
+            }      
+
+            let currentPres = presidents.find(president => president.name === presName);
+            let currentDisplay;
+
+            switch (argument) {
+                case "party":
+                    currentDisplay = currentPres.party;
+                    break;
+                case "vicePresident": 
+                    currentDisplay = currentPres.vicePresident;
+                    break;
+                case "yearsInOffice":
+                    currentDisplay = currentPres.yearsInOffice;
+                    break;
+                case "birthYear":
+                    currentDisplay = currentPres.birthYear;
+                    break;
+            }
+
+            arrayItem.querySelector('p:nth-child(3)').innerHTML = currentDisplay;
+        })
+        
+        fontResize();
+        display.close();
+    }
+
+    function fontResize() {
+        let presSpace = document.getElementById("presidentsSpace");
+        let presSpaceText = presSpace.querySelectorAll("p");
+      
+        presSpaceText.forEach(text => {
+          const maxWidth = 150;
+          const baseFontSize = 16;
+          const currentWidth = text.offsetWidth;
+      
+          if (currentWidth > maxWidth) {
+            const ratio = maxWidth / currentWidth;
+            const newSize = baseFontSize * ratio;
+      
+            text.style.fontSize = `${newSize}px`;
+          }
+        });
+      }
 
 
 
