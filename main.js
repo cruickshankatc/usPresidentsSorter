@@ -929,6 +929,7 @@ function filterPresidents() {
         let presSpace = document.getElementById("presidentsSpace");
         let presSpaceDivs = presSpace.querySelectorAll('.floatingHeads');
         let presSpaceArray = Array.from(presSpaceDivs);
+        let currentPres;
 
 
 
@@ -937,12 +938,18 @@ function filterPresidents() {
 
             if (presName.includes("Cleveland" && "&")) {
                 presName = presName.split('.').slice(2).join('.').trim(); 
+            } else if (presName === "24. Grover Cleveland") {
+                presName = "24. Grover Cleveland";
             } else {
                 presName = presName.split('.').slice(1).join('.').trim();   
                 console.log(presName);  
             }      
 
-            let currentPres = presidents.find(president => president.name === presName);
+            if (presName === "24. Grover Cleveland") {
+                currentPres = presidents[23];
+            } else {
+                currentPres = presidents.find(president => president.name === presName);
+            }
             let currentDisplay;
 
             switch (argument) {
@@ -961,6 +968,11 @@ function filterPresidents() {
             }
 
             arrayItem.querySelector('p:nth-child(3)').innerHTML = currentDisplay;
+            if (arrayItem.querySelector('p:nth-child(3)').innerHTML === "Vacant") {
+                arrayItem.querySelector('p:nth-child(3)').style.fontStyle = "italic";
+            } else {
+                arrayItem.querySelector('p:nth-child(3)').style.fontStyle = "normal";
+            }
         })
         
         fontResize();
@@ -973,7 +985,7 @@ function filterPresidents() {
       
         presSpaceText.forEach(text => {
           const maxWidth = 150;
-          const baseFontSize = 16;
+          const baseFontSize = 14;
           const currentWidth = text.offsetWidth;
       
           if (currentWidth > maxWidth) {

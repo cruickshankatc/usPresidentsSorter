@@ -1,11 +1,13 @@
 * {
   list-style: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 :root {
   --main-color: gray;
   --main-color-hover: rgb(61, 61, 61);
-  --backdrop-color: white;
+  --backdrop-color: #f8f9fa;
   --text-color: black;
 }
 
@@ -14,6 +16,10 @@ body {
   padding: 0;
   background-color: var(--backdrop-color);
   color: var(--text-color);
+}
+
+.italicized {
+  font-style: italic;
 }
 
 /*HEADER*/
@@ -103,7 +109,7 @@ body {
 
 .floatingHeads p {
   margin: 1px 0px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .floatingHeads img {
