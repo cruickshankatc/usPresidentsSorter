@@ -1,0 +1,143 @@
+* {
+  list-style: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+:root {
+  --main-color: gray;
+  --main-color-hover: rgb(61, 61, 61);
+  --backdrop-color: #f8f9fa;
+  --text-color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--backdrop-color);
+  color: var(--text-color);
+}
+
+.italicized {
+  font-style: italic;
+}
+
+/*HEADER*/
+#header {
+  background-color: var(--main-color);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+#pageTitle {
+  margin-right: auto;
+}
+
+#menuIcon {
+  margin-left: auto;
+  padding-right: 20px;
+  font-size: 30px;
+}
+
+#menuIcon i {
+  cursor: pointer;
+}
+
+#menuIcon2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+#menuIcon2:hover {
+  background-color: var(--main-color-hover);
+}
+
+/*FOOTER*/
+#footer {
+  background-color: var(--main-color);
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+}
+
+#footer i {
+  cursor: pointer;
+}
+
+/*PRESIDENTS SPACE*/
+#presidentsSpace {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#presidentsSpace li {
+  position: relative;
+}
+
+#presidentsSpace img {
+  height: 200px;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center;
+}
+
+.floatingHeads {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 20px;
+}
+
+.floatingHeads p {
+  margin: 1px 0px;
+  font-size: 14px;
+}
+
+.floatingHeads img {
+  margin: 7px 0px;
+}
+
+/*FILTERS*/
+.popups::backdrop {
+  background: black;
+  opacity: .7;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--main-color);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  width: 30px;
+}
+
+.icons:hover {
+  background-color: var(--main-color-hover);
+}
+
+.popups li {
+  cursor: pointer;
+}

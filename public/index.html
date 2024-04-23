@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Presidents of the United States!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <section id="header">
+    <h1 id="pageTitle">PresidentsFilter</h1>
+    <div id="menuIcon"><i id="menuIcon2" class="fas fa-bars" onclick="openMenu()"></i></div>
+  </section>
+  <section id="presidentsSpace">
+    
+  </section>
+  <dialog id="filters" class="popups">
+    <div id="party">
+      <span>Party:</span>
+      <label>
+        <input type="checkbox" name="party" value="Republican"> Republican
+      </label>
+      <label>
+        <input type="checkbox" name="party" value="Democrat"> Democrat
+      </label>
+    </div>
+
+    <div id="terms">
+      <span>Terms:</span>
+      <label>
+        <input type="checkbox" name="terms" value="1"> One
+      </label>
+      <label>
+        <input type="checkbox" name="terms" value="2"> Two
+      </label>
+      <label>
+        <input type="checkbox" name="terms" value="4"> Four
+      </label>
+    </div>
+  
+    <div id="diedInOffice">
+      <span>Died In Office:</span>
+      <label>
+        <input type="checkbox" name="diedInOffice" value="true"> Yes
+      </label>
+      <label>
+        <input type="checkbox" name="diedInOffice" value="false"> No
+      </label>
+    </div>
+  
+    <div id="assassinated">
+      <span>Assassinated:</span>
+      <label>
+        <input type="checkbox" name="assassinated" value="true"> Yes
+      </label>
+      <label>
+        <input type="checkbox" name="assassinated" value="false"> No
+      </label>
+    </div>
+  
+    <button onclick="filterPresidents()">Filter</button>
+    <button onclick="closeFilter()">Cancel</button>
+  </dialog>
+  <dialog id="menu" class="popups">
+    <div id="themeSelect">
+      <span>Theme:</span>
+      <ul>
+        <li onclick="themeChange('light')">Light</li>
+        <li onclick="themeChange('dark')">Dark</li>
+        <li onclick="themeChange('patriotic')">Patriotic</li>
+        <li onclick="themeChange('gray')">Gray</li>
+      </ul>
+    </div>
+  </dialog>
+ 
+  <dialog id="display" class="popups">
+      <span>Underneath the president's name, what should be displayed?</span>
+      <ul>
+        <li onclick="presDisplay('yearsInOffice')">Years in office</li>
+        <li onclick="presDisplay('party')">Party</li>
+        <li onclick="presDisplay('birthYear')">Birth year</li>
+        <li onclick="presDisplay('vicePresident')">Vice President</li>
+      </ul>
+  </dialog>
+ 
+  <dialog id="sort" class="popups">
+      <span>Sort by:</span>
+      <li onclick="presSort('byName')">Name</li>
+      <li onclick="presSort('byParty')">Party</li>
+      <li onclick="presSort('byBirthYear')">Birth Year</li>
+      <li onclick="presSort('byDaysInOffice')">Days in Office</li>
+  </dialog>
+
+  <section id="footer">
+    <div class="icons" onclick="openFilter()"><i class="fas fa-filter icon"></i></div>
+    <div class="icons" onclick="openDisplay()"><i class="fas fa-desktop icon"></i></div>
+    <div class="icons" onclick="openSort()"><i class="fas fa-sort icon"></i></div>
+  </section>
+  <script src="../presidents.js"></script>
+  <script src="javascript/main.js"></script>
+</body>
+</html>
