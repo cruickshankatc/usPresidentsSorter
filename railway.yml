@@ -1,0 +1,13 @@
+services:
+  - name: web
+    env:
+      NODE_ENV: production
+    port: 3000
+    command: npm start
+
+databases:
+  - name: presidentsdb
+
+env:
+  MYSQL_USERNAME: root
+  MYSQL_PASSWORD: ratFOCCd!3
