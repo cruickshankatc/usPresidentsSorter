@@ -4,16 +4,20 @@ const path = require('path');
 
 const app = express();
 
+// Load environment variables from .env file
+require('dotenv').config();
+
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Create a MySQL connection pool
 const pool = mysql.createPool({
     connectionLimit: 10,
-    host: "localhost", // Use "localhost" instead of "LAPTOP-HPONJH7I"
-    user: "root",
-    password: "ratFOCCd!3",
-    database: "presidentsdb"
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE
 });
 
 // Example route to fetch data from the database

@@ -98,6 +98,10 @@ body {
   aspect-ratio: 3/4;
   object-fit: cover;
   object-position: center;
+  border: solid;
+  border-width: 5px;
+  border-color: gray;
+  border-radius: 50px;
 }
 
 .floatingHeads {
@@ -105,6 +109,24 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0px 20px;
+}
+
+.floatingHeads--info {
+  margin-top: -50px;
+}
+
+.floatingHeads--info--sub1 {
+  display: flex;
+}
+
+.floatingsHeads--num {
+  background-color: gray;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.floatingHeads--name {
+  background-color: gray;
 }
 
 .floatingHeads p {
