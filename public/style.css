@@ -102,40 +102,37 @@ body {
   border-width: 5px;
   border-color: gray;
   border-radius: 50px;
+  margin: 7px 0px;
 }
 
-.floatingHeads {
+.presCard {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0px 20px;
 }
 
-.floatingHeads--info {
+.presCard--info {
   margin-top: -50px;
 }
 
-.floatingHeads--info--sub1 {
+.presCard--info--sub {
   display: flex;
 }
 
-.floatingsHeads--num {
+.presNum {
   background-color: gray;
   border-radius: 50%;
   padding: 10px;
 }
 
-.floatingHeads--name {
+.presName {
   background-color: gray;
 }
 
-.floatingHeads p {
+.presCard p {
   margin: 1px 0px;
   font-size: 14px;
-}
-
-.floatingHeads img {
-  margin: 7px 0px;
 }
 
 /*FILTERS*/

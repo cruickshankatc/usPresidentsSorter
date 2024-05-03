@@ -1,6 +1,6 @@
 function presDisplay(argument) {
     let presSpace = document.getElementById("presidentsSpace");
-    let presSpaceDivs = presSpace.querySelectorAll('.floatingHeads');
+    let presSpaceDivs = presSpace.querySelectorAll('.presCard');
     let presSpaceArray = Array.from(presSpaceDivs);
     let currentPres;
 
