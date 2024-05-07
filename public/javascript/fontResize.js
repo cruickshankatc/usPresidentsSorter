@@ -1,9 +1,9 @@
 function fontResize() {
     let presSpace = document.getElementById("presidentsSpace");
-    let presSpaceText = presSpace.querySelectorAll("p");
+    let presSpaceText = presSpace.querySelectorAll(".presName");
   
     presSpaceText.forEach(text => {
-      const maxWidth = 150;
+      const maxWidth = 100;
       const baseFontSize = 14;
       const currentWidth = text.offsetWidth;
   
