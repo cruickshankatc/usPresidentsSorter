@@ -30,4 +30,5 @@ function createPresidentDivs1(presidentsArg) {
             createPresidentDivs2(president);
         })        
     }
+
 }

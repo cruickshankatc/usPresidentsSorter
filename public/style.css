@@ -117,31 +117,43 @@ body {
   margin-top: -50px;
   display: flex;
   width: 100%;
+  margin-right: auto;
 }
 
 .presCard--info--sub {
   display: flex;
   flex-direction: column;
   background-color: gray;
-  flex-grow: 1;
-  width: 80%
+  width: 110px;
 }
 
 .presCard--info--sub p {
   display: flex;
   flex-direction: column;
-  background-color: gray;
+  padding: 0px 3px;
   white-space: nowrap;
   width: 100%;
+  overflow: hidden;
+  height: 50%;
+}
+
+.presName {
+  justify-content: center;
 }
 
 .presNum {
+  display: flex;
+  
+  justify-content: center;
   background-color: gray;
   border-radius: 50%;
   padding: 10px;
   height: 20px;
-  width: 20px;
+  width: 10%;
+  border: solid;
 }
+
+
 
 .presCard p {
   margin: 1px 0px;

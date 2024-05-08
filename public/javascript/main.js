@@ -26,3 +26,5 @@ function openDisplay() {
 function openSort() {
     sort.showModal();
 }
+
+fontResize();

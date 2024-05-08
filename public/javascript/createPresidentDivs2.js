@@ -15,7 +15,8 @@ function createPresidentDivs2(president) {
     presParty.className = "presParty";
     presNum.className = `presNum`;
     presName.className = `presName`;
-    presNum.innerHTML = `${president.number}.&nbsp;`;
+    //    presNum.innerHTML = `${president.number}.&nbsp;`;
+        presNum.innerHTML = `${president.number}`;
     presName.innerHTML = `${president.name}`;
 
     presParty.innerHTML = president.party;
@@ -37,6 +38,6 @@ function createPresidentDivs2(president) {
     // presCardInfo.appendChild(presParty);
     // presCard.appendChild(presCardInfo);
     // presidentsSpace.appendChild(presCard);  
-    
-    fontResize()
+
+
 }
