@@ -11,6 +11,10 @@
     <div id="menuIcon"><i id="menuIcon2" class="fas fa-bars" onclick="openMenu()"></i></div>
   </section>
 
+  <section id="preloader">
+
+  </section>
+
   <section id="presidentsSpace">
 
   </section>
@@ -70,6 +74,7 @@
         <li onclick="themeChange('patriotic')">Patriotic</li>
         <li onclick="themeChange('gray')">Gray</li>
       </ul>
+      <button onclick="closeMenu()">Cancel</button>
     </div>
   </dialog>
  
@@ -81,6 +86,7 @@
         <li onclick="presDisplay('birthYear')">Birth year</li>
         <li onclick="presDisplay('vicePresident')">Vice President</li>
       </ul>
+      <button onclick="closeDisplay()">Cancel</button>
   </dialog>
  
   <dialog id="sort" class="popups">
@@ -89,6 +95,7 @@
       <li onclick="presSort('byParty')">Party</li>
       <li onclick="presSort('byBirthYear')">Birth Year</li>
       <li onclick="presSort('byDaysInOffice')">Days in Office</li>
+      <button onclick="closeSort()">Cancel</button>
   </dialog>
 
   <section id="footer">

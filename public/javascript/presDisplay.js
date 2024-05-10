@@ -4,19 +4,10 @@ function presDisplay(argument) {
     let presSpaceArray = Array.from(presSpaceDivs);
     let currentPres;
 
-
-
     presSpaceArray.forEach(arrayItem => {
-        let presName = arrayItem.querySelector('p:nth-child(2)').innerHTML;
+        let presName = arrayItem.querySelector('.presName').innerHTML;
 
-        if (presName.includes("Cleveland" && "&")) {
-            presName = presName.split('.').slice(2).join('.').trim(); 
-        } else if (presName === "24. Grover Cleveland") {
-            presName = "24. Grover Cleveland";
-        } else {
-            presName = presName.split('.').slice(1).join('.').trim();   
-            console.log(presName);  
-        }      
+            
 
         if (presName === "24. Grover Cleveland") {
             currentPres = presidents[23];
@@ -40,11 +31,11 @@ function presDisplay(argument) {
                 break;
         }
 
-        arrayItem.querySelector('p:nth-child(3)').innerHTML = currentDisplay;
-        if (arrayItem.querySelector('p:nth-child(3)').innerHTML === "Vacant") {
-            arrayItem.querySelector('p:nth-child(3)').style.fontStyle = "italic";
+        arrayItem.querySelector('.presParty').innerHTML = currentDisplay;
+        if (arrayItem.querySelector('.presParty').innerHTML === "Vacant") {
+            arrayItem.querySelector('.presParty').style.fontStyle = "italic";
         } else {
-            arrayItem.querySelector('p:nth-child(3)').style.fontStyle = "normal";
+            arrayItem.querySelector('.presParty').style.fontStyle = "normal";
         }
     })
     
